@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --bg-color:#1C1C1C;
+    --font-color:#D3D3D3;
+    --X-color: #0000FF;
+    --O-color: #FF0000;
+    --victory-color:#00FF00;
+}
+
+header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    gap: 20px;
+    font-size: 35px;
+    color: var(--font-color);
+}
+
+header button{
+    padding: 5px 10px;
+    color: var(--font-color);
+    cursor: pointer;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 25px;
+}
+
+.nameOfPlayer{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player1Div, .player2Div{
+    display: flex;
+    flex-direction: column;
+}
+
+#player1, #player2{
+    background-color: var(--font-color);
+    padding: 2px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.play{
+    cursor: pointer;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 3px 15px;
+}
+
+.play:hover{
+    border-radius: 10px;
+}
+
+#namePlayerGame{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    color: var(--font-color);
+    max-width: 100vw;
+}
+
+.spanName1, .spanName2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o{
+    color: var(--O-color) !important;
+    font-size: 50px;
+    text-shadow: white 0px 0px 3px;
+}
+
+.x{
+    color: var(--X-color) !important;
+    font-size: 50px;
+    text-shadow: white 0px 0px 3px;
+}
+
+.turnPlayer{
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+h2{
+    color: var(--font-color);
+}
+
+.game{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    background-color: var(--font-color);
+    gap: 25px;
+    height: 370px;
+    width: 370px;
+    margin-bottom: 30px;
+}
+
+.game span{
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+    background-color: var(--bg-color);
+}
+
+.game span.win{
+    background-color: var(--victory-color);
+}
+
+.btnPlayX{
+    color: var(--X-color);
+    font-size: 100px;
+    text-shadow: white 0px 0px 3px;
+}
+
+.btnPlayO{
+    color: var(--O-color);
+    font-size: 100px;
+    text-shadow: white 0px 0px 3px;
+}
+
+.game span{
+    width: 120px;
+    height: 120px;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.win{
+    background-color: var(--victory-color);
+}
+
+/* Responsividade */
+@media(max-width: 465px) {
+    .nameOfPlayer{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 410px) {
+    .game{
+        display: grid;
+        grid-template-columns: 40px 40px 40px;
+        grid-template-rows: 40px 40px 40px;
+        background-color: var(--font-color);
+        gap: 30px;
+        height: 205px;
+        width: 205px;
+        margin-bottom: 30px;
+    }
+    
+    .game span{
+        width: 65px;
+        height: 65px;
+        font-size: 3rem;
+    }
+}

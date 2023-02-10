@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <main data-theme="dark">
+    <header>
+        <p class="title">Jogo da Velha JS</p>
+        <button class="changeTheme" id="changeTheme">Escolha o tema Dark/Light</button>
+    </header>
+        <div class="nameOfPlayer">
+            <div class="player1Div">
+                <label for="player1">Player 1:</label>
+                <input type="text" name="player1" id="player1">
+            </div>
+            <div class="player2Div">
+                <label for="player2">Player 2:</label>
+                <input type="text" name="player2" id="player2">
+            </div>
+            <button class="play" id="play">JOGAR!</button>
+        </div>
+        <h2>Vez de: <span id="turnPlayer"></span></h2>
+        <section class="game">
+            <span data-region="0.0" class="cursorPointer" id="btn-1"></span>
+            <span data-region="0.1" class="cursorPointer" id="btn-2"></span>
+            <span data-region="0.2" class="cursorPointer" id="btn-3"></span>
+            <span data-region="1.0" class="cursorPointer" id="btn-4"></span>
+            <span data-region="1.1" class="cursorPointer" id="btn-5"></span>
+            <span data-region="1.2" class="cursorPointer" id="btn-6"></span>
+            <span data-region="2.0" class="cursorPointer" id="btn-7"></span>
+            <span data-region="2.1" class="cursorPointer" id="btn-8"></span>
+            <span data-region="2.2" class="cursorPointer" id="btn-9"></span>
+        </section>
+    </main>
+</body>
+
+</html>
